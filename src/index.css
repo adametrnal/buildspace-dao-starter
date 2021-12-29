@@ -4,7 +4,7 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  background-color: #cfce94;
   color: #fff;
   overflow-x: hidden;
 }
@@ -93,7 +93,7 @@ h1 {
 
 .member-page form h5 {
   margin-top: 0;
-  color: #7700ee;
+  color: #ffffff;
 }
 
 .member-page form .card > div {
@@ -107,10 +107,10 @@ h1 {
 }
 
 .card {
-  background-color: #fff;
+  background-color: rgb(65, 189, 54);
   padding: 1rem;
   border-radius: 1rem;
-  color: #000;
+  color: rgb(255, 255, 255);
   box-shadow: 3.1px 6.2px 6.2px hsl(0deg 0% 0% / 0.4);
 }
 
