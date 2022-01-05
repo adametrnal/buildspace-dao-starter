@@ -40,6 +40,20 @@ const App = () => {
     return str.substring(0,6) + "..." + str.substring(str.length - 4);
   };
 
+  const connectWalletClick = async () => {
+    try {
+      const { ethereum } = window;
+      if (!ethereum) {
+        alert("You need to download Metamask to use this dApp!");
+        return;
+      }
+      connectWallet("injected");
+
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   //grabs all the addresses of our members that hold the NFT
   useEffect(() => {
     if (!hasClaimedNFT) {
@@ -166,7 +180,7 @@ const App = () => {
     return (
       <div className="landing">
         <h1>Welcome to PSLosersDAO</h1>
-        <button onClick={() => connectWallet("injected")} className="btn-hero">
+        <button onClick={connectWalletClick} className="btn-hero">
           Connect your wallet
         </button>
       </div>
